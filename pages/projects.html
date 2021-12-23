@@ -55,6 +55,11 @@
       <link rel="stylesheet" href="../css/style.css" />
       <link rel="stylesheet" href="../css/projects.css" />
       <link rel="stylesheet" href="../css/responsive.css" />
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6863208875908240"
+        crossorigin="anonymous"
+      ></script>
     </head>
 
     <body id="dark-mode">
@@ -92,7 +97,7 @@
           >
             <ul class="navbar-nav ml-auto menu-item rounded">
               <li class="nav-item">
-                <a class="nav-link" href="#banner">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./about.html">About Us</a>
@@ -153,7 +158,7 @@
               class="col-12 col-sm-12 col-md-12 col-lg-4 pb-5 pb-sm-5 pb-lg-1"
             >
               <div class="footer-logo">
-                <a class="f-logo" href="#banner"><b>Opentek Org</b></a>
+                <a class="f-logo" href="/"><b>Opentek Org</b></a>
                 <p>
                   In open source, we feel strongly that to really do something
                   well, you have to get a lot of people involved.
@@ -239,7 +244,13 @@
                     >
                   </li>
                   <li><a href="./pages/tutorial.html">Tutorials</a></li>
-                  <li><a href="#">Join Us!</a></li>
+                  <li>
+                    <a
+                      href="https://github.com/Opentek-Org/support"
+                      target="_blank"
+                      >Join Us!</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -290,6 +301,14 @@
       <script defer src="../js/circular.js"></script>
       <script defer src="../js/custom.js"></script>
       <script defer src="../js/projects.js"></script>
+
+      <script defer>
+        document.addEventListener("click", function (e) {
+          if (e.target.tagName == "A" && !e.target.hasAttribute("target")) {
+            e.target.setAttribute("target", "blank");
+          }
+        });
+      </script>
       <!-- <script>
 		var video_id = 'VA770wpLX-Q';
 

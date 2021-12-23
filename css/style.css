@@ -341,6 +341,10 @@ p {
   font-weight: 500;
 }
 
+.discord-banner p:hover {
+  font-weight: 1000;
+}
+
 /*===========================
  *** DISCORD BANNER AREA END ***
 =============================*/
@@ -431,6 +435,10 @@ p {
   transition: all linear 0.3s;
   position: relative;
   margin-right: 18px;
+}
+
+.nav-item-btn {
+  line-height: 2.8;
 }
 
 .bor {
@@ -537,6 +545,16 @@ p {
   color: #fff;
 }
 
+.login-btn {
+  outline-color: #aa80ff;
+}
+
+.login-btn:hover {
+  border-color: #aa80ff;
+  background-color: transparent;
+  color: #aa80ff;
+}
+
 /*===========================
  *** BANNER AREA START ***
 =============================*/
@@ -585,6 +603,7 @@ p {
   line-height: 45px;
   padding-bottom: 23px;
   padding-top: 16px;
+  margin-top: 10%;
 }
 
 .banner-txt p {
@@ -703,6 +722,7 @@ p {
 =============================*/
 #overview {
   padding: 80px 0;
+  margin-top: 20%;
 }
 
 .over-pa {
@@ -1192,6 +1212,17 @@ li {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 989px) {
+  .avatar {
+    position: relative;
+    left: 0;
+    top: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
 }
 
 .hidden {
